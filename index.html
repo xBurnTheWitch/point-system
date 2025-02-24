@@ -3,49 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de puntos - Website!</title>
+    <title>Sistema de Recompensas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Si tienes un archivo de estilos CSS -->
 </head>
 <body>
-    <!-- Menú hamburguesa -->
-    <nav>
-        <button id="menu-toggle">☰</button>
-        <ul id="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Información</a></li>
-            <li><a href="#">Mis Puntos</a></li>
-            <li><a href="#">Recompensas</a></li>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Login/Logoff</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Apartado informativo -->
-    <section>
-        <h1>Bienvenido al Sistema de Puntos</h1>
-        <p>
-            Nuestro sistema de puntos recompensa tu esfuerzo y desempeño. A medida que completes
-            tus tareas y alcances objetivos, ganarás puntos que podrás canjear por increíbles
-            recompensas. El sistema te permite visualizar tu progreso, compararte con tus compañeros
-            y obtener beneficios exclusivos sin perder tus puntos acumulados. Trabaja, acumula y disfruta.
-        </p>
-        <p>
-            Cada mes, los puntos se reinician, brindándote nuevas oportunidades para alcanzar
-            tus metas y obtener más beneficios. Consulta tu historial de puntos y estadísticas
-            para llevar un control de tu rendimiento.
-        </p>
-    </section>
-    
-    <!-- Sección de puntos del usuario -->
-    <section>
-        <h2>Tus Puntos</h2>
-        <p style="font-size: 2em; font-weight: bold;">150 pts</p>
-        <a href="#">Ver estadísticas</a> | <a href="#">Ver ranking</a>
-    </section>
-    
-    <!-- Footer -->
+
+    <header>
+        <h1>Bienvenido al Sistema de Recompensas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="register.php">Registrar Usuario</a></li>
+                <li><a href="assign_points.php">Asignar Puntos</a></li>
+                <li><a href="view_points_history.php">Ver Historial de Puntos</a></li>
+                <li><a href="view_rewards.php">Ver Recompensas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>¿Qué es este sistema?</h2>
+            <p>Este sistema está diseñado para gestionar puntos y recompensas en función de las ventas y objetivos alcanzados por los empleados.</p>
+            <p>Los empleados podrán acumular puntos, que se pueden canjear por recompensas. Los supervisores podrán gestionar las transacciones de puntos y ver el progreso de los empleados.</p>
+        </section>
+
+        <section id="actions">
+            <h2>Acciones principales</h2>
+            <div class="action-card">
+                <h3>Registrar un nuevo usuario</h3>
+                <p>Si eres un supervisor, puedes registrar nuevos empleados en el sistema.</p>
+                <a href="register.php" class="btn">Registrar</a>
+            </div>
+            <div class="action-card">
+                <h3>Asignar puntos a un usuario</h3>
+                <p>Asigna puntos a los empleados en función de sus ventas u otros logros.</p>
+                <a href="assign_points.php" class="btn">Asignar Puntos</a>
+            </div>
+            <div class="action-card">
+                <h3>Ver historial de puntos</h3>
+                <p>Consulta el historial de puntos de cualquier empleado.</p>
+                <a href="view_points_history.php" class="btn">Ver Historial</a>
+            </div>
+            <div class="action-card">
+                <h3>Ver recompensas disponibles</h3>
+                <p>Mira las recompensas que los empleados pueden obtener al alcanzar los objetivos.</p>
+                <a href="view_rewards.php" class="btn">Ver Recompensas</a>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>Sistema de Puntos © 2025 - Todos los derechos reservados</p>
-        <a href="#">Política de privacidad</a>
+        <p>&copy; 2025 Sistema de Recompensas. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
